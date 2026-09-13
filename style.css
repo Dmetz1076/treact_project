@@ -15,6 +15,9 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .purple {
@@ -53,7 +56,7 @@ a {
 
 .nav__link {
   font-size: 16px;
-  padding: 8px 24PX;
+  padding: 8px 24px;
   margin: 0 4px;
   font-weight: 500;
   padding-top: 16px;
@@ -68,7 +71,6 @@ a {
   background-color: #6415ff;
   color: #fff;
   padding: 8px 24px;
-  border-radius: 4px;
   font-weight: 500;
   border-radius: 50px;
 }
@@ -100,31 +102,32 @@ h1 {
   padding: 32px 0;
 }
 
-.header__email-form {
+.header__email {
+  position: relative;
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
 .header__email--btn {
-  padding: 18px 32px;
+  padding: 16px 28px;
   border-radius: 50px;
   background-color: #6415ff;
   color: white;
   font-size: 16px;
   font-weight: bold;
-  position: relative;
+  position: absolute;
+  right: 4px;
 }
 
 .header__email--input{
-  width: 30%;
+  width: 100%;
   border-radius: 50px;
   border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
-  z-index: 1;
 }
 
 .header__customers--title {
@@ -132,10 +135,10 @@ h1 {
 }
 
 .header__customer--logo {
-  transform: calc(100% / 60%);
+  transform: scale(0.6);
+  
 }
 
 .header__img--wrapper {
-  display: block;
   transform: scale(0.6);
 }
