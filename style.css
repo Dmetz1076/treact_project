@@ -188,16 +188,11 @@ h1 {
 img {
   max-width: 100%;
   height: auto;
-  min-width: 0;
 }
 
 .header__img--wrapper {
   width: 60%;
   margin-left: auto;
-}
-
-.header__img--wrapper, .header__img {
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -325,7 +320,7 @@ h2 {
 .feature__title {
   font-size: 20px;
   font-weight: 700;
-  color: rgb (36, 62, 99);
+  color: rgb(36, 62, 99);
 }
 
 .feature__para {
@@ -560,7 +555,6 @@ svg {
   background-color: rgb(255, 255, 255);
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-right: 2rem;
   padding-top: 0.5rem;
   text-align: center;
   color: rgb(26 32 44);
@@ -753,4 +747,121 @@ svg {
 
 .testimonial__author-info {
   margin-left: 24px;
+}
+
+.testimonial__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background-color: #e2e8f0;
+  margin: 0 12px;
+}
+
+.testimonial__button {
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #edf2f7;
+  border-radius: 50%;
+  margin: 0 12px;
+  transition: all 300ms ease;
+}
+
+
+/* START */
+
+.start__blob--1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 20rem;
+  width: 20rem;
+  transform: translate(-5rem, 8rem);
+  color: rgb(80 17 204);
+  opacity: 0.5;
+}
+
+.start__blob--2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 20rem;
+  width: 20rem;
+  transform: translate(5rem, -16rem);
+  color: rgb(80 17 204);
+  opacity: 0.5;
+}
+
+.start__container {
+  padding: 96px 0;
+  width: 100%;
+  background-color: rgb(100, 21, 255);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start__row {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start__title, .start__buttons {
+  width: 50%;
+}
+
+.start__title {
+  color: #f7fafc;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  z-index: 2;
+}
+
+.start__buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7fafc;
+  line-height: 1.5;
+  margin: 1px;
+  z-index: 2;
+}
+
+.start__button {
+  /* padding: 20px 40px;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7fafc;
+  line-height: 1.5;
+  margin: 1px;
+  z-index: 2; */
+}
+
+.start__button--primary {
+  background-color: #f56565;
+  color: #f7fafc;
+  margin-right: 32px;
+  transition: all 300ms ease;
+}
+
+.start__button--secondary {
+  border: 1px solid rgb(160, 174, 192);
+  transition: all 300ms ease;
 }
